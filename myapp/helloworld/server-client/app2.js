@@ -79,7 +79,7 @@ http.createServer(function (req, res) {
              * ...也能达到‘querystring库’的解析效果，而且不使用querystring
              */
             var query = url.parse(req.url, true).query;
-           writeOut(query, res);
+            writeOut(query, res);
         } else {
             //head put delete options etc.
         }
@@ -88,3 +88,7 @@ http.createServer(function (req, res) {
 }).listen(8124, function () {
     console.log("listen on port 8124");
 });
+
+
+
+//
